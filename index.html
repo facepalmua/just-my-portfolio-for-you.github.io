@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Segway</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animations.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+							<span class="sr-only">Open navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">
+							<img src="images/logo.png" alt="Logo">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="responsive-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="javascript:void(0)" class="to-catalog">каталог</a></li>
+							<li><a href="javascript:void(0)" class="to-calculator">калькулятор доставки</a></li>
+							<li><a href="javascript:void(0)" class="to-wholesale">оптовику</a></li>
+							<li><a href="javascript:void(0)" class="to-video">видеообзор</a></li>
+							<li class="phone">
+								<a href="tel:+88002509059">8 800 250 90 59<small>звонок по РФ бесплатный</small></a>
+							</li>
+						</ul>
+					</div>
+				</div>					
+			</nav>
+		</header>
+			<div class="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-xs-12">
+							<h1>
+								настоящие
+								<span>гироскутеры и сигвеи</span>
+								от завода-производителя
+							</h1>
+							<div class="heading">
+								<h2>от <span>16 900</span></h2>
+								<small>со скидкой 17% за видеоотзыв*</small>
+							</div>
+							<img src="images/segway-lg-1.png" alt="yellow-segway" class="segway hidden-xs">
+						</div>
+						<div class="col-lg-4 col-xs-12 form">
+							<form>
+								<h2 class="animated bounce infinite" id="anim-1">
+									оставте заявку
+									<span>получите скидку</span>
+									<span class="percents">17%</span>
+								</h2>
+								<div class="form-group">
+									<label>Введите Ваше имя</label>
+									<input type="text" class="form-control" name="user-name" required placeholder="Иван Иванов">
+								</div>
+								<div class="form-group">
+									<label>Введите Ваш телефон</label>
+									<input type="text" class="form-control" name="user-phone" required placeholder="+7 819 888 99 99">
+								</div>
+								<button type="button" class="btn btn-default take-call">заказать звонок</button>
+								<p class="action-time">* акция действительна<br> до 23.04.2016</p>
+							</form>
+						</div>
+					</div>		
+				</div>		
+			</div>
+			<div class="about-us">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-3 boxes">
+						<div class="img flip"></div>
+						<div class="caption">Реализуем более 1 500 гироскутеров в месяц</div>
+					</div>
+					<div class="col-lg-2 cup">
+						<div class="img flip"></div>
+						<div class="caption">Номер один на рынке Российской Федерации</div>
+					</div>
+					<div class="col-lg-2 wrench">
+						<div class="img flip"></div>
+						<div class="caption">Собственная сеть сервисных центров</div>
+					</div>
+				</div>
+			</div>
+			<div class="difference">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 text-center">
+						<h2 class="content-title text-center">
+							<span>как отличить</span>
+							настоящий гироскутер от подделки
+						</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/COvnHv42T-A" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="advantages">
+				<div class="how-to-use">
+					<div class="row">
+						<div>
+							<h2 class="content-title text-center">
+								<span>как можно использовать</span>
+								гироскутеры на все 100%
+							</h2>
+							<div class="container">
+								<div class="col-lg-4 col-lg-offset-1">
+									<div class="jumbotron">
+										<h2>идеально подходит<span>для длительных прогулок</span>в городских парках<br>или на набережных</h2>
+										<p><a class="btn btn-primary btn-lg btn-custom" id="city-models-btn" role="button" data-toggle="modal" data-target="#city-models">посмотреть городские модели</a></p>
+									</div>
+								</div>
+							</div>
+							<div id="city-models" class="modal fade models-info" role="dialog">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close text-center" data-dismiss="modal">X</button>
+											<h4 class="modal-title text-center">городские модели</h4>
+										</div>
+										<div class="modal-body">
+											<div class="city-slider">
+												<div>
+													<div class="row">
+															<div class="col-lg-6">
+																<div class="carousel-caption">
+																	<h3 class="segway-name">smart balance</h3>
+																	<img src="images/segway-1.jpg" alt="segway-1" class="img-responsive">
+																	<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+																	<input class="btn btn-primary pull-right buy buy-city" type="button" value="Заказать">
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="carousel-caption">
+																	<h3 class="segway-name">smart balance</h3>
+																	<img src="images/segway-2.jpg" alt="segway-1" class="img-responsive">
+																	<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+																	<input class="btn btn-primary pull-right buy buy-city" type="button" value="Заказать">
+																</div>
+															</div>
+														</div>
+												</div>
+												<div>
+													<div class="row">
+															<div class="col-lg-6">
+																<div class="carousel-caption">
+																	<h3 class="segway-name">smart balance</h3>
+																	<img src="images/segway-1.jpg" alt="segway-1" class="img-responsive">
+																	<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+																	<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="carousel-caption">
+																	<h3 class="segway-name">smart balance</h3>
+																	<img src="images/segway-2.jpg" alt="segway-1" class="img-responsive">
+																	<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+																	<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+																</div>
+															</div>
+														</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="any-age">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-8">
+								<div class="jumbotron">
+									<h2 class="white-circle">отлично подходит<span>для любого возраста</span></h2>
+									<p><a class="btn btn-primary btn-lg btn-custom" id="age-models-btn" role="button" data-toggle="modal" data-target="#age-models">посмотреть детские модели</a></p>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div id="age-models" class="modal fade models-info" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close text-center" data-dismiss="modal">X</button>
+									<h4 class="modal-title text-center">детские модели</h4>
+								</div>
+								<div class="modal-body">
+									<div class="age-slider">
+										<div>
+											<div class="row">
+													<div class="col-lg-6">
+														<div class="carousel-caption">
+															<h3 class="segway-name">smart balance</h3>
+															<img src="images/segway-1.jpg" alt="segway-1" class="img-responsive">
+															<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+															<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="carousel-caption">
+															<h3 class="segway-name">smart balance</h3>
+															<img src="images/segway-2.jpg" alt="segway-1" class="img-responsive">
+															<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+															<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+														</div>
+													</div>
+												</div>
+										</div>
+										<div>
+											<div class="row">
+													<div class="col-lg-6">
+														<div class="carousel-caption">
+															<h3 class="segway-name">smart balance</h3>
+															<img src="images/segway-1.jpg" alt="segway-1" class="img-responsive">
+															<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+															<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="carousel-caption">
+															<h3 class="segway-name">smart balance</h3>
+															<img src="images/segway-2.jpg" alt="segway-1" class="img-responsive">
+															<p class="segway-price pull-left">Стоимость:<span>27 900 руб.</span></p>
+															<input class="btn btn-primary pull-right buy" type="button" value="Заказать">
+														</div>
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div class="speed">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-3">
+								<div class="jumbotron">
+									<h2>гироскутер развивает<span>скорость<br>до 120 км/ч</span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="promo">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-2">
+								<div class="jumbotron">
+									<h2 class="white-circle">гироскутер <span>усилит ваши промо-акции</span></h2>
+									<p>ваши листовки будут брать с улыбкой</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="action">
+					<div class="container">
+						<div class="row">
+							<img src="images/image-1.jpg" alt="bag" class="hidden-xs">
+							<div class="col-lg-4 col-lg-offset-3">
+								<h2>сумка-чехол<br>и брелок с сигнализацией<br>в подарок всем<br> участникам акции</h2>
+							</div>
+							<div class="col-lg-5 text-justify">
+								<form class="form-inline">
+									<div class="form-group">
+										<label class="sr-only">ваше имя</label>
+										<input type="text" class="form-control" required placeholder="Иван Иванов">
+									</div>
+									<div class="form-group">
+										<label class="sr-only">номер телефона</label>
+										<input type="text" class="form-control" required placeholder="+7 819 888 99 99">
+									</div>
+									<button type="button" class="btn btn-default take-call">я хочу принять участие в акции</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="opportunities">
+					<div class="row">
+						<div>
+							<h2 class="content-title text-center">
+								<span>на что способны</span>
+								гироскутеры
+							</h2>
+							<div class="container">
+								<div class="col-lg-4 col-lg-offset-6">
+									<div class="jumbotron">
+										<h2>гироскутер развивает<span>скорость<br> до 20 км/ч</span></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="weight">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-5">
+								<div class="jumbotron">
+									<h2 class="white-circle">выдержет вес<br>до 140 кг<span>проверено!</span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="charge">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-center">гироскутер<br> может проехать<span>расстояние в 200 футбольных полей</span>на одном заряде</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="review" id="review">
+				<h2 class="content-title text-center">
+					<span>электротранспорт</span>
+					на любой вкус
+				</h2>
+				<div class="tabs">
+					<div class="nav-center">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab-1" data-toggle="tab">гироскутеры</a></li>
+							<li><a href="#tab-2" data-toggle="tab">сигвей</a></li>
+							<li><a href="#tab-3" data-toggle="tab">моноколесо</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="tab-1">
+							<div class="container">
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="row wo-m test-drive">
+									<div class="col-lg-7">
+										<div class="jumbotron test-drive-info wow fadeInLeft">
+											<div class="text pull-left">
+												<h2>пройдите тестдрайв!</h2>
+												<p>Тестдрайв доступен в городах<br>Москва, Кемерово, Благовещенск</p>
+											</div>
+											<p><a class="btn btn-primary btn-lg btn-custom" role="button">Записаться на тестдрайв</a></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-lg-offset-1 wo-p hidden-xs">
+										<img src="images/segway-4.jpg" alt="black-segway" class="img-responsive">
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab-2">
+							<div class="container">
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+								<div class="row wo-m test-drive">
+									<div class="col-lg-7">
+										<div class="jumbotron test-drive-info wow fadeInLeft">
+											<div class="text pull-left">
+												<h2>пройдите тестдрайв!</h2>
+												<p>Тестдрайв доступен в городах<br>Москва, Кемерово, Благовещенск</p>
+											</div>
+											<p><a class="btn btn-primary btn-lg btn-custom" href="#" role="button">Записаться на тестдрайв</a></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-lg-offset-1 hidden-xs">
+										<img src="images/segway-4.jpg" alt="black-segway" class="img-responsive">
+									</div>
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+								<div class="good-info">
+									<div class="row">
+										<div class="col-lg-4 wo-p">
+											<h3>модель<span>smart balance 6.5</span></h3>
+											<div class="specifications">
+												<p>
+													<span>Диаметр колеса</span>
+													<span>6,5 дюймов</span>
+												</p>
+												<p>
+													<span>Аккамулятор</span>
+													<span>Samsung 36w 4,4aH</span>
+												</p>
+												<p>
+													<span>Мощность мотора</span>
+													<span>350W*2</span>
+												</p>
+												<p>
+													<span>Максимальная скорость</span>
+													<span>15 км/ч</span>
+												</p>
+												<p>
+													<span>Максимальная нагрузка</span>
+													<span>120 кг</span>
+												</p>
+												<p>
+													<span>Дальность пробега<br> на одной зарядке</span>
+													<span>20 км</span>
+												</p>
+												<p>
+													<span>Вес</span>
+													<span>11,5 кг</span>
+												</p>
+												<p>
+													<span>Габариты упаковки, см</span>
+													<span>0,56*0,25*0,25</span>
+												</p>
+												<p>
+													<span>Время зарядки аккмулятора</span>
+													<span>2 часа</span>
+												</p>	
+											</div>
+										</div>
+										<div class="col-lg-5 text-center">
+											<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+										</div>
+										<div class="col-lg-3 wo-p">
+											<p class="segway-price">Стоимость: <span>27 900 руб.</span></p>
+											<input class="btn btn-primary pull-right buy" type="button" value="купить в один клик">
+											<div class="segway-slider segway-list">
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive active">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+												<div>
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">
+													<img src="images/segway-3.jpg" alt="segway" class="img-responsive">													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 colors">
+											<div class="col-lg-3 wo-p">
+												<h4>Цыетовые решения</h4>
+											</div>
+											<div class="col-lg-9">
+												<ul>
+													<li><a href="#" class="black">черный</a></li>
+													<li><a href="#" class="dark-blue">синий</a></li>
+													<li class="active"><a href="#" class="red">красный</a></li>
+													<li><a href="#" class="green">зеленый</a></li>
+													<li><a href="#" class="white">белый</a></li>
+													<li><a href="#" class="hip-hop">хип-хоп</a></li>
+													<li><a href="#" class="graffiti">граффити</a></li>
+													<li><a href="#" class="lilac">сиреневый</a></li>
+													<li><a href="#" class="orange">оранжевый</a></li>
+													<li><a href="#" class="yellow">желтый</a></li>
+													<li><a href="#" class="blue">голубой</a></li>
+													<li><a href="#" class="grey">серый</a></li>
+													<li><a href="#" class="gold">золото</a></li>
+													<li><a href="#" class="silver">серебро</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row additionally">
+										<div class="col-xs-6 col-lg-2 rus-instruction">Инструкция<br>на русском<br>языке</div>
+										<div class="col-xs-6 col-lg-2 bluetooth">Bluetooth-гарнитура</div>
+										<div class="col-xs-6 col-lg-2 protection">Защита<br>корпуса</div>
+										<div class="col-xs-6 col-lg-2 key-ring">Брелок-сигнализация</div>
+										<div class="col-xs-6 col-lg-2 bag">Сумка-<br>чехол</div>
+										<div class="col-xs-6 col-lg-2 led">Светодиодные<br>ходовые<br>огни</div>
+									</div>
+								</div>
+								<div class="discount clearfix">
+									<p>Заказать гироскутер <span>по акции* </span><span class="discount-count">со скидкой 17%</span> за 26 999 руб.</p>
+									<form class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Ваше имя</label>
+											<input type="text" class="form-control" placeholder="Иван Иванов">
+										</div>
+										<div class="form-group">
+											<label class="sr-only">Ваш телефон</label>
+											<input type="text" class="form-control" placeholder="+7 819 888 99 99">
+										</div>
+										<button type="button" class="btn btn-default">Заказать со скидкой</button>
+									</form>									
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab-3">
+							<h4>Tab 3 content</h4>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="show-all text-center wow fadeInLeft">
+				<a href="#" class="show-all-title">Посмотреть весь асортимент</a>
+				<a href="#" class="show-all-btn"></a>
+			</h2>
+			<div class="delivery">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">доставка <span>товара</span></h2>
+						<div class="col-lg-4 col-lg-offset-6">
+							<ul>
+								<li>Доставляем в любой населенный пункт, где есть “Почта России”</li>
+								<li>Доставка в регионы от 1 до 5 дней нашим партнером транпсортной компанией “Деловые Линии”</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculator" id="calculator">
+				<div class="map wow zoomIn"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-centered">
+							<form class="text-center">
+								<h2 class="content-title">
+									<span>калькулятор</span>
+									стоимости доставки
+								</h2>
+								<div class="form-group">
+									<label>Введите Ваш город</label>
+									<input type="text" class="form-control" name="user-name" placeholder="Кемерово">
+								</div>
+								<div class="form-group">
+									<label>Количество товара</label>
+									<input type="number" step="1" class="form-control" name="user-phone" placeholder="15">
+								</div>
+								<div class="form-group">
+									<label>Введите Ваш телефон</label>
+									<input type="text" class="form-control" name="user-phone" placeholder="+7 819 888 99 99">
+								</div>
+								<button type="button" class="btn btn-primary btn-calculator">рассчитать</button>
+								<div class="calculator-result text-center">
+									Стоимость доставки составляет
+									<span>500</span>
+									рублей
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="payment">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>варианты</span>
+							оплаты
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-lg-offset-3">
+							<div class="img cash"></div>
+							<div class="caption">наличный расчет</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="img card"></div>
+							<div class="caption">перевод по карте</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="img account"></div>
+							<div class="caption">оплата на ресчетный счет</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="guarantee">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>гарантия</span>
+							на гироскутеры
+						</h2>
+					</div>
+				</div>
+				<div class="guarantee-list">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="img flip term"></div>
+									<div class="caption">Гарантийный<br>срок составляет<br>1 год</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="img flip service-centers"></div>
+									<div class="caption">Свои сервисные<br> центры в городах:<br>Москва, Кемерово,<br>Благовещенск</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="img flip details"></div>
+									<div class="caption">В наличии<br>все запчасти<br>и корпуса</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="img flip change"></div>
+									<div class="caption">Замена<br>«день-в-день»<br>+ быстрая<br>экспертиза</div>
+								</div>					
+							</div>
+						</div>	
+					</div>
+					<div class="official">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 text-center">
+									<p class="text-center">наша компания является
+										<span>официальным представителем</span>завода-производителя<span class="factory">smart balance</span>в россии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="director">
+						<div class="container">
+							<div class="row">
+								<h2 class="content-title text-center">
+									<span>слово</span>
+									директора
+								</h2>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-lg-offset-2">
+									<p>Товарищи! новая модель организационной деятельности способствует подготовки и реализации форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+									<img src="images/icon-autograph.png" alt="director autograph" class="pull-right">
+									<p class="director-info">
+										<span>Андрей Шварок</span>
+										генеральный<br>директор
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="employees retail">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>отдел розничных</span>
+							продаж
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-lg-push-5 col-lg-offset-2 img">
+							<img src="images/employee-1.png" alt="employee 1" class="img-responsive">
+						</div>
+						<div class="col-lg-5 col-lg-pull-3 wo-p">
+							<blockquote>
+								наш коллектив обучен и настроен помочь вам выбрать наиболее выгодный товар
+							</blockquote>
+							<p class="text-right employee-info">
+								<cite>Анна Жидкова</cite>
+								<span>руководитель отдела розничных продаж</span>
+							</p>
+							<ul>
+								<li class="experience">продала более 4 000<br>гироскутеров и скайвеев</li>
+								<li class="web">vk/anna-grand</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="download">скачать<br>розничный<br>прайс</a>
+			</div>
+			<div class="employees wholesale" id="wholesale">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>отдел оптовых</span>
+							продаж
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-lg-push-5 col-lg-offset-2 img">
+							<img src="images/employee-2.png" alt="employee 1" class="img-responsive">
+						</div>
+						<div class="col-lg-5 col-lg-pull-3 wo-p">
+							<blockquote>
+								наш коллектив обучен и настроен помочь вам выбрать наиболее выгодный товар
+							</blockquote>
+							<p class="text-right employee-info">
+								<cite>Семен Семенов</cite>
+								<span>руководитель отдела птовых продаж</span>
+							</p>
+							<ul>
+								<li class="experience">продала более<br>7 тонн груза</li>
+								<li class="web">vk/semenov-55</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="download">скачать<br>оптовый<br>прайс</a>
+			</div>
+			<div class="employees marketing">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>отдел</span>
+							маркетинга
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-lg-push-5 col-lg-offset-2 img">
+							<img src="images/employee-3.png" alt="employee 1" class="img-responsive">
+						</div>
+						<div class="col-lg-5 col-lg-pull-3 wo-p">
+							<blockquote>
+								наш коллектив обучен и настроен помочь вам выбрать наиболее выгодный товар
+							</blockquote>
+							<p class="text-right employee-info">
+								<cite>Олег Михайлов</cite>
+								<span>руководитель отдела птовых продаж</span>
+							</p>
+							<ul>
+								<li class="experience">автор 100 слоганов<br>и разработчик 17 брендов</li>
+								<li class="web">vk/mykhailov-oleg</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container video-header" id="video">
+				<h2 class="content-title text-center">
+					<span>видео-отзывы</span>
+					наших клиентов
+				</h2>
+			</div>
+			<div class="video-response">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-centered">
+							<div class="customers-slider">
+								<div>
+									<img src="images/customer-video-1.jpg" alt="customer 1">
+									<div class="text bg-blue">
+										<div class="open-video" data-video="https://www.youtube.com/embed/q2WgseSrtls?controls=0&amp;showinfo=0"></div>
+										<p class="user-name">Мария Шаболдина</p>
+										<p class="user-job">экстрималка</p>
+									</div>
+								</div>
+								<div>
+									<img src="images/customer-video-2.jpg" alt="customer 2">
+									<div class="text bg-blue">
+										<div class="open-video" data-video="https://www.youtube.com/embed/xlPw8NUZuuU?controls=0&amp;showinfo=0"></div>
+										<p class="user-name">Мария Шаболдина</p>
+										<p class="user-job">экстрималка</p>
+									</div>
+								</div>
+								<div>
+									<img src="images/customer-video-3.jpg" alt="customer 3">
+									<div class="text bg-cyan">
+										<div class="open-video" data-video="https://www.youtube.com/embed/1HAs4XLhSZw?controls=0&amp;showinfo=0"></div>
+										<p class="user-name">Мария Шаболдина</p>
+										<p class="user-job">экстрималка</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="leave-comment">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-centered">
+							<p class="text-center">Если Вы стали счастливым обладателем гироскутера, моноколеса или сигвея, оставьте свой видеоотзыв, а взамен получите бонус к следующей покупке.</p>
+							<button type="button" class="btn btn-primary make-review">оставить отзыв</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="customers-review">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>отзывы</span>
+							наших клиентов
+						</h2>
+					</div>
+				</div>
+				<div class="reviews-slider">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="customers slider">
+									<div class="">
+										<div class="col-lg-4 col-xs-4 img">
+											<img src="images/customer-1.jpg" alt="customer 1" class="img-responsive">
+										</div>
+										<div class="col-lg-8 col-xs-8 review-content">
+											<blockquote>Товарищи! новая модель организационной деятельности способствует подготовки и реализации форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</blockquote>
+											<p>
+												<cite>Василия Кудряшев</cite>
+												студент
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="workers">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>жизнь компании</span>
+							глазами сотрудников
+						</h2>
+					</div>
+					<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="workers-slider">
+									<div>
+										<img src="images/worker-1.jpg" alt="worker 1">
+										<div class="worker-info clearfix">
+											<h4>Карина Иванова стала лучшим сотрудником месяца</h4>
+											<p>Равным образом укрепление и развитие структуры требуют определения и уточнения форм развития.</p>
+											<p class="more">Больше фотографий Вы найдете в наших соцсетях</p>
+											<ul>
+												<li class="insta"><a href="#">instagram/grand-photo</a></li>
+												<li class="vk"><a href="#">vk/mykhailov-oleg</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<img src="images/worker-1.jpg" alt="worker 1">
+										<div class="worker-info clearfix">
+											<h4>2. Карина Иванова стала лучшим сотрудником месяца</h4>
+											<p>Равным образом укрепление и развитие структуры требуют определения и уточнения форм развития.</p>
+											<p class="more">Больше фотографий Вы найдете в наших соцсетях</p>
+											<ul>
+												<li class="insta"><a href="#">instagram/grand-photo</a></li>
+												<li class="vk"><a href="#">vk/mykhailov-oleg</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div id="workers-pager">
+									<a data-slide-index="0" href=""><img src="images/gallery-img-1.jpg"></a>
+									<a data-slide-index="1" href=""><img src="images/gallery-img-2.jpg"></a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="teach-5-min">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>p.s.</span>
+							как прохожие за 5<br>минут научились кататься
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3 text-center">
+							<p>Это устройство перемещается по асфальту, траве и песку и держит равновесие с помощью гироскопа. Научиться ездить на гироскутере Skyboard можно за несколько минут.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/COvnHv42T-A" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="questions">
+				<div class="container">
+					<div class="row">
+						<h2 class="content-title text-center">
+							<span>остались вопросы?</span>
+							задайте их нашему специалисту
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-centered">
+							<form class="text-center" method="post" action="">
+								<div class="form-group">
+									<label>Введите Ваше имя</label>
+									<input type="text" class="form-control" name="user-name" placeholder="Иван Иванов" required>
+								</div>
+								<div class="form-group">
+									<label>Введите Ваше имя</label>
+									<input type="email" class="form-control" name="user-email" required placeholder="super@mail.ru">
+								</div>
+								<div class="form-group">
+									<label>Введите Ваш телефон</label>
+									<input type="text" class="form-control" id="user-phone" name="user-phone" required placeholder="+7 819 888 99 99">
+								</div>
+								<button type="button" class="btn btn-default take-consultation">получить консультацию</button>
+								<div class="confidentiality text-center">Политика<br>конфиденциальности</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-lg-offset-3">
+							<h3>Компания &laquo;ГРАНД&raquo;</h3>
+							<ul>
+								<li><a href="#">Работа в компании</a></li>
+								<li><a href="javscript:void(0)" class="to-wholesale">Отдел оптовых продаж</a></li>
+								<li><a href="#">Отдел маркетинга</a></li>
+								<li><a href="#">Оптовый каталог</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2">
+							<h3>Гироскутеры</h3>
+							<ul>
+								<li><a href="#">Smart Balance</a></li>
+								<li><a href="#">Ninebot</a></li>
+								<li><a href="#">Skybot</a></li>
+								<li><a href="#">Transformer</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2">
+							<h3>Мы в соцсетях</h3>
+							<ul class="social clearfix">
+								<li><a href="#" class="vk"></a></li>
+								<li><a href="#" class="fb"></a></li>
+								<li><a href="#" class="youtube"></a></li>
+								<li><a href="#" class="insta"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Отправить отзыв</a></li>
+								<li><a href="#">Сотрудничать с нами</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row copyright">
+						<div class="col-lg-2 col-lg-offset-3">&copy; 2016 компания &laquo;ГРАНД&raquo;</div>
+						<div class="col-lg-1"><a href="#">Реквизиты</a></div>
+						<div class="col-lg-3"><a href="#">Политика конфиденциальности</a></div>
+					</div>
+				</div>
+			</footer>
+			<div id="modal-thx-1" class="modal fade modal-thx thx-statement" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+							<h4 class="modal-title">спасибо за вопрос</h4>
+						</div>
+						<div class="modal-body">
+							<p>Наш сотрудник свяжется с Вами в ближайшее время и ответит на интересующие Вас вопросы!</p>
+						</div>
+						<div class="modal-footer">
+							<p class="text-center">Присоединяйтесь к нам<br>в соц сетях:</p>
+							<ul class="social text-center">
+								<li><a href="#" class="vk"></a></li>
+								<li><a href="#" class="fb"></a></li>
+								<li><a href="#" class="youtube"></a></li>
+								<li><a href="#" class="insta"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-thx-2" class="modal fade modal-thx" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+							<h4 class="modal-title">спасибо за заявку!</h4>
+						</div>
+						<div class="modal-body">
+							<p>Наш сотрудник свяжется с Вами в ближайшее время!</p>
+						</div>
+						<div class="modal-footer">
+							<p class="text-center">Присоединяйтесь к нам<br>в соц сетях:</p>
+							<ul class="social text-center">
+								<li><a href="#" class="vk"></a></li>
+								<li><a href="#" class="fb"></a></li>
+								<li><a href="#" class="youtube"></a></li>
+								<li><a href="#" class="insta"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-thx-3" class="modal fade modal-thx modal-file" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+							<h4 class="modal-title">оставить<br>видеоотзыв</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label>Ваше имя</label>
+									<input type="text" class="form-control" name="name" required>
+								</div>
+								<div class="form-group">
+									<label>Ваш телефон</label>
+									<input type="text" class="form-control" name="phone" required>
+								</div>
+								<div class="form-group">
+									<label>Ваш e-mail</label>
+									<input type="email" class="form-control" name="email" required>
+								</div>
+								<div class="form-group">
+									<label>Ваш род деятельности</label>
+									<input type="text" class="form-control" name="job" required>
+								</div>
+								<div class="form-group">
+									<label for="video-upload" class="upload">File input</label>
+									<input type="file" id="video-upload">
+								</div>
+								<button type="button" class="btn btn-default leave-review">оставить отзыв</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-thx-4" class="modal fade modal-thx" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+							<h4 class="modal-title">спасибо за заявку!</h4>
+						</div>
+						<div class="modal-footer">
+							<p class="text-center">Присоединяйтесь к нам<br>в соц сетях:</p>
+							<ul class="social text-center">
+								<li><a href="#" class="vk"></a></li>
+								<li><a href="#" class="fb"></a></li>
+								<li><a href="#" class="youtube"></a></li>
+								<li><a href="#" class="insta"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-thx-5" class="modal fade modal-thx modal-file" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+							<h4 class="modal-title">заявка<br>на звонок</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label>Ваше имя</label>
+									<input type="text" class="form-control" name="name" required>
+								</div>
+								<div class="form-group">
+									<label>Ваш телефон</label>
+									<input type="text" class="form-control" name="phone" required>
+								</div>
+								<button type="button" class="btn btn-default">заказать звонок</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-thx-6" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">X</button>
+						</div>
+						<div class="modal-body">
+							<iframe width="420" height="315" src="" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<script src="libs/jquery-2.2.1.min.js"></script>
+		<script src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		<script src="libs/jquery.bxslider.min.js"></script>
+		<script src="libs/wow.min.js"></script>
+		
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
